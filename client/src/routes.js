@@ -14,7 +14,7 @@ import UsuarioCadastrar from './pages/admin/usuarios/usuarios.cadastrar';
 
 // Imports Client
 import Home from './pages/client/home';
-import ProdutoDetails from './pages/client/produtos/produtos.datails';
+import ProdutoDetails from './pages/client/produtos/produtos.details';
 
 export default function Routes() {
 
