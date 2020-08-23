@@ -99,7 +99,7 @@ export default function UsuarioCadastrar() {
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <TextField
-                    required
+                    required                    
                     id="email"
                     name="email"
                     label="Email"
