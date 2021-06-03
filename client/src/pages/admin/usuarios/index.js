@@ -22,6 +22,7 @@ import ImgAdmin from '../../../assets/img/admin.png';
 
 import Footer from '../../../components/footer-admin';
 import api from '../../../services/api';
+import { getNomeTipo, getNomeTipoLabel } from '../../../functions/static_data';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -104,10 +105,7 @@ export default function UsuariosListagem() {
                                 {row.nome_usuario}
                               </TableCell>
                               <TableCell align="center">{row.email_usuario}</TableCell>
-                              <TableCell align="center">{row.tipo_usuario === 1 ?
-                                            <Chip label="Administrador" color="primary"/> : 
-                                            <Chip label="Funcionário" color="secondary"/>}
-                              </TableCell>
+                              <TableCell align="center"><Chip label={getNomeTipo(row.tipo_usuario)} color={getNomeTipoLabel(row.tipo_usuario)}/></TableCell>
                               <TableCell align="center">{new Date(row.createdAt).toLocaleString('pt-br')}</TableCell>
                               <TableCell align="right">
                                 <ButtonGroup aria-label="outlined primary button group">

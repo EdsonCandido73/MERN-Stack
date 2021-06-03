@@ -13,6 +13,8 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 
 import { mainListItems, secondaryListItems } from './list-menu-admin';
+import { getNomeUsuario } from '../services/auth';
+import logoSistema from '../assets/img/logo-sistema.png';
 
 const drawerWidth = 240;
 
@@ -106,6 +108,7 @@ export default function ManuAdmin({title}) {
             <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
                 {title}
             </Typography>
+            {getNomeUsuario()}
 
             </Toolbar>
         </AppBar>
@@ -117,6 +120,7 @@ export default function ManuAdmin({title}) {
         open={open}
       >
             <div className={classes.toolbarIcon}>
+              <img styke={{width:150, height:50}} src={logoSistema} alt="Logo sistema" />
             <IconButton onClick={handleDrawerClose}>
                 <ChevronLeftIcon />
             </IconButton>
