@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'auto',
   },
   container: {
-    paddingTop: theme.spacing(4),
+    paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(4),
   },
   paper: {
@@ -86,6 +86,7 @@ export default function UsuariosListagem() {
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
             <Grid item sm={12}>
+            <Button style={{marginBottom:10}} variant="contained" color="primary" href={'/admin/usuarios/cadastrar'} >Cadastrar</Button>
               <Paper className={classes.paper}>
                 <h2>Listagem de Usuários</h2>
                 <Grid container spacing={3}>
@@ -113,8 +114,8 @@ export default function UsuariosListagem() {
                               <TableCell align="center">{new Date(row.createdAt).toLocaleString('pt-br')}</TableCell>
                               <TableCell align="right">
                                 <ButtonGroup aria-label="outlined primary button group">
-                                  <Button color="primary" href={'/admin/usuarios/editar/'+row._id} >Atualizar</Button>
-                                  <Button color="secondary" onClick={() => handleDelete(row._id)} >Excluir</Button>
+                                  <Button variant="contained" color="primary" href={'/admin/usuarios/editar/'+row._id} >Atualizar</Button>
+                                  <Button variant="contained" color="secondary" onClick={() => handleDelete(row._id)} >Excluir</Button>
                                 </ButtonGroup>
                               </TableCell>
                             </TableRow>
