@@ -16,11 +16,13 @@ import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Chip from '@material-ui/core/Chip';
 import LinearProgress from '@material-ui/core/LinearProgress';
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
+import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import AutorenewIcon from '@material-ui/icons/Autorenew';
 
 import MenuAdmin from '../../../components/menu-admin';
-
 import ImgAdmin from '../../../assets/img/admin.png';
-
 import Footer from '../../../components/footer-admin';
 import api from '../../../services/api';
 import { getNomeTipo, getNomeTipoLabel } from '../../../functions/static_data';
@@ -86,7 +88,10 @@ export default function UsuariosListagem() {
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
             <Grid item sm={12}>
-            <Button style={{marginBottom:10}} variant="contained" color="primary" href={'/admin/usuarios/cadastrar'} >Cadastrar</Button>
+            <Button style={{marginBottom:10}} variant="contained" color="primary" href={'/admin/usuarios/cadastrar'}>
+              <AddCircleOutlineIcon />
+              Cadastrar
+            </Button>
               <Paper className={classes.paper}>
                 <h2>Listagem de Usuários</h2>
                 <Grid container spacing={3}>
@@ -114,8 +119,8 @@ export default function UsuariosListagem() {
                               <TableCell align="center">{new Date(row.createdAt).toLocaleString('pt-br')}</TableCell>
                               <TableCell align="right">
                                 <ButtonGroup aria-label="outlined primary button group">
-                                  <Button variant="contained" color="primary" href={'/admin/usuarios/editar/'+row._id} >Atualizar</Button>
-                                  <Button variant="contained" color="secondary" onClick={() => handleDelete(row._id)} >Excluir</Button>
+                                  <Button variant="contained" color="primary" href={'/admin/usuarios/editar/'+row._id}><AutorenewIcon/> Atualizar</Button>
+                                  <Button variant="contained" color="secondary" onClick={() => handleDelete(row._id)}><DeleteForeverIcon /></Button>
                                 </ButtonGroup>
                               </TableCell>
                             </TableRow>
