@@ -20,22 +20,26 @@
 
 CRUD de usuários e produtos focado no aprendizado MERN Stack.
 
-Foi utilizado neste projeto:
-M - MongoDB
-E - Express
-R - React Js
-N - Node JS
-Login com autenticação JWT
-Material-UI na construção do Menu lateral e páginas
+## 🛠 Tecnologias
+
+As seguintes tecnologias foram usadas na construção do projeto:
+- [MongoDB]
+- [Express]
+- [React][reactjs]
+- [Node.js][nodejs]
+- [JavaScript]
+- [JWT]
+- [Material-UI]
+
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-   <img alt="Pagina Login" title="Login" src="./.github/login.jpg" width="200px">
-   <img alt="Pagina Dashboard" title="Dashboard" src="./.github/dashboard.jpg" width="200px">
+   <img alt="Pagina Login" title="Login" src="./.github/login.jpg" width="300px">
+   <img alt="Pagina Dashboard" title="Dashboard" src="./.github/dashboard.jpg" width="300px">
 </p>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-   <img alt="Pagina Listagem Usuarios" title="Listagem Usuarios" src="./.github/listagem_usuarios.jpg" width="200px">
-   <img alt="Pagina Atualizacao Usuarios" title="Atualizacao Usuarios" src="./.github/atualizacao_usuarios.jpg" width="200px">
+   <img alt="Pagina Listagem Usuarios" title="Listagem Usuarios" src="./.github/listagem_usuarios.jpg" width="300px">
+   <img alt="Pagina Atualizacao Usuarios" title="Atualizacao Usuarios" src="./.github/atualizacao_usuarios.jpg" width="300px">
 </p>
 
 ## 📝 Licença
