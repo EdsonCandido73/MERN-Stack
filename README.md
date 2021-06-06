@@ -23,31 +23,36 @@ CRUD de usuários e produtos focado no aprendizado MERN Stack.
 ## 🛠 Tecnologias
 
 As seguintes tecnologias foram usadas na construção do projeto:
-- [MongoDB]
-- [Express]
+- [MongoDB][mongo]
+- [Express][express]
 - [React][reactjs]
 - [Node.js][nodejs]
-- [JavaScript]
-- [JWT]
-- [Material-UI]
+- [JavaScript][javascript]
+- [JWT][jwt]
+- [Material-UI][material]
 
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-   <img alt="Pagina Login" title="Login" src="./.github/login.jpg" width="300px">
-   <img alt="Pagina Dashboard" title="Dashboard" src="./.github/dashboard.jpg" width="300px">
+   <img alt="Pagina Login" title="Login" src="./.github/login.jpg" width="400px">
+   <img alt="Pagina Dashboard" title="Dashboard" src="./.github/dashboard.jpg" width="400px">
 </p>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-   <img alt="Pagina Listagem Usuarios" title="Listagem Usuarios" src="./.github/listagem_usuarios.jpg" width="300px">
-   <img alt="Pagina Atualizacao Usuarios" title="Atualizacao Usuarios" src="./.github/atualizacao_usuarios.jpg" width="300px">
+   <img alt="Pagina Listagem Usuarios" title="Listagem Usuarios" src="./.github/listagem_usuarios.jpg" width="400px">
+   <img alt="Pagina Atualizacao Usuarios" title="Atualizacao Usuarios" src="./.github/atualizacao_usuarios.jpg" width="400px">
 </p>
 
 ## 📝 Licença
 
-Este projeto esta sobe a licença MIT. Veja a [LICENÇA](license) para saber mais.
+Este projeto esta sobe a licença MIT. 
 
 Feito por Edson Cândido - Curso Básico MERN desenvolvido por Daniel Correia
 
 [nodejs]: https://nodejs.org/
 [reactjs]: https://reactjs.org
-[license]: https://opensource.org/licenses/MIT
+[mongo]: https://www.mongodb.com/
+[express]: https://expressjs.com/pt-br/
+[javascript]: https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript
+[jwt]: https://jwt.io/
+[material]: https://material-ui.com/
+
